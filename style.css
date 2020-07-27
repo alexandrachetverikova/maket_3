@@ -1,0 +1,594 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  display: block;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 36px;
+  padding: 0;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+p {
+  color: #283136;
+}
+
+/*СЕТКА  НАВИГАЦИЯ  NERDS*/
+
+.main-header {
+  background-color: #eeeeee;
+  height: 114px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navigation-wrapper {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  box-sizing: border-box;
+}
+
+.logo-nav {
+  padding: 49px;
+  padding-right: 202px;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 0;
+  padding-top: 60px;
+  padding-right: 245px;
+
+  line-height: 30px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.site-navigation li {
+  margin-left: 44px;
+}
+
+.site-navigation li:first-child {
+  margin-left: 0;
+}
+
+.basket-navigation {
+  margin-top: 76px;
+  margin-bottom: 0;
+  padding: 0;
+
+  line-height: 30px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.basket-navigation li {
+  position: relative;
+  padding-left: 40px;
+}
+
+.basket-navigation li::before {
+  position: absolute;
+  content: '';
+  top: 7px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+
+  background: url("img/cart-icon.png") no-repeat 0 0;
+}
+
+.site-navigation a,
+.basket-navigation a {
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 4px;
+  vertical-align: top;
+  color: #000;
+}
+
+/*СЕТКА  СПИСКА  ПРЕДЛОЖЕНИЙ*/
+
+ .offers {
+  box-sizing: border-box;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 80px;
+  padding-right: 60px;
+  padding-bottom: 80px;
+}
+
+.offers,
+.offers-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.offers-list {
+  width: 100%;
+  padding: 0;
+  margin: 0;  
+}
+
+.offers-list li {
+  flex-basis: 300px;
+  padding-bottom: 10px;
+}
+
+.offers-list h3,
+.offers-list p {
+  margin: 0;
+}
+
+.offers-list img {
+  padding-bottom: 26px;
+}
+
+.offers-list p {
+  width: 280px;
+  padding-bottom: 35px;
+}
+
+/*СЕТКА  ФУТЕР*/
+
+.main-footer {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-container {
+  display: flex;
+  margin: 72px auto;
+}
+
+.footer-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 399px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container li {
+  margin-right: 10px;
+}
+
+.social-vk,
+.social-fb,
+.social-insta {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+
+}
+
+.footer-container a:hover,
+.footer-container a:focus {
+  background-color: #e74246;
+}
+
+.footer-container a:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+.footer-container a::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+   
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.social-vk:active::after,
+.social-fb:active::after,
+.social-insta:active::after {
+  opacity: 0.3;
+}
+
+.social-vk::after {
+  width: 26px;
+  height: 15px;
+  background-image: url("img/vk-icon.png");
+}
+
+.social-fb::after {
+  width: 12px;
+  height: 22px;
+  background-image: url("img/fb-icon.png");
+}
+
+.social-insta::after {
+  width: 21px;
+  height: 21px;
+  background-image: url("img/insta-icon.png");
+}
+
+.footer-sale {
+  flex-grow: 1;
+}
+
+.footer-sale b {
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 10px;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.footer-sale span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #444;
+}
+
+/*ПРЕОБЛАДАНИЕ  ИЛИ  ПРЕВОСХОДСТВО*/
+
+
+
+.better-hand {
+  display: flex;
+  margin: 72px auto;
+  margin-bottom: 45px;
+  box-sizing: border-box;
+  border-top: 2px solid #eee;
+  width: 1200px;
+  padding: 0 20px;
+}
+
+.orders {
+  flex-basis: 660px;
+  flex-grow: 1;
+  margin-top: 27px;
+  padding-right: 150px;
+}
+
+.orders h2 {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  color: #000;
+
+  margin-bottom: 22px;
+}
+
+.orders p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #283136;
+
+  margin-bottom: 22px;
+}
+
+.orders span {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.orders ul {
+  margin: 3px;
+  padding: 0;
+  list-style: none;
+}
+
+.orders li {
+  position: relative;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 32px;
+}
+
+.orders li::before {
+  position: absolute;
+  content: '';
+  top: 10px;
+  left: -3px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
+.percentage p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000;
+
+  margin: 0;
+  text-align: center;
+}
+
+.percentage ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 11px;
+  padding: 0;
+}
+
+.percentage li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #283136;
+
+  margin-top: 43px;
+}
+
+.percentage span {
+display: inline-block;
+vertical-align: top;
+margin-bottom: 27px;
+
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10.06px;
+  color: #000;
+}
+
+.percentage {
+  flex-basis: 365px;
+  background: url("img/nerds_logo.jpg") no-repeat 10% 37px;
+  padding-top: 282px;
+  width: 360px;
+  height: 208px;
+}
+
+
+/*КНОПКИ*/
+
+.button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+
+  color: #ffffff;
+  display: inline-block; 
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 2px;
+}
+
+/*КНОПКА  "УЗНАТЬ БОЛЬШЕ"*/
+
+.description .button {
+  padding: 19px 55px 18px 53px;
+  background-color: #fb565a;
+}
+
+.description .button:hover,
+.description .button:focus {
+   background-color: #e74246;
+}
+
+.description .button:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+/*КНОПКА  "ЗАКАЗАТЬ"  КРАСНАЯ*/
+
+.offers-list .sites {
+  padding: 19px 39px 18px 39px;
+  background-color: #fb565a;
+}
+
+.offers-list .sites:hover,
+.offers-list .sites:focus {
+  background-color: #e74246;
+}
+
+.offers-list .sites:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+/*КНОПКА  "ЗАКАЗАТЬ"  ЗЕЛЕНАЯ*/
+
+.offers-list .apps {
+  padding: 19px 39px 18px 39px;
+  background-color: #00ca74;
+}
+
+.offers-list .apps:hover,
+.offers-list .apps:focus {
+  background-color: #00bc6c;
+}
+
+.offers-list .apps:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #00aa62;
+}
+
+/*КНОПКА  "ЗАКАЗАТЬ"  ЖЕЛТАЯ*/
+
+.offers-list .presentations {
+  padding: 19px 39px 18px 39px;
+  background-color: #efc84a;
+}
+
+.offers-list .presentations:hover,
+.offers-list .presentations:active {
+  background-color: #eab534;
+}
+
+.offers-list .presentations:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #e5a722;
+}
+
+/*КНОПКА  "НАПИШИТЕ  НАМ"*/
+
+.contacts .button {
+  padding: 19px 39px 18px 39px;
+  background-color: #fb565a;
+}
+
+.contacts .button:hover,
+.contacts .button:focus {
+  background-color: #e74246;
+}
+
+.contacts .button:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+/*ЛОГОТИП  ШАПКА  NERDS*/
+
+.logo-nav img:hover,
+.logo-nav img:focus {
+  opacity: 0.8;
+}
+
+.logo-nav img:active {
+  opacity: 0.3;
+}
+
+.main-header {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.site-navigation,
+.header-right {
+  list-style: none;
+}
+
+.site-navigation a,
+.basket-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.basket-navigation a:hover,
+.basket-navigation a:focus {
+  color: #fb565a;;
+}
+
+.site-navigation a:active,
+.basket-navigation a:active {
+   opacity: 0.3;
+   color: #000000;
+} 
+
+/*ЛОГОТИПЫ  САЙТОВ*/
+
+.logos {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 78px;
+  padding: 60px 20px 23px 20px;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+
+.logos-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 44px 0 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.logo-item {
+  position: relative;
+}
+
+.logo-item::after {
+  position: absolute;
+  content: '';
+  top: -30px;
+  right: -50px;
+  bottom: 0;
+  width: 2px;
+  height: 52px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #eee;
+}
+
+.logo-item:last-child::after {
+  width: 0;
+  height: 0;
+}
+
+.logos a {
+   opacity: 0.2;
+}
+
+.logos a:hover,
+.logos a:focus {
+  opacity: 1;
+}
+
+.logos a:active {
+  opacity: 0.1;
+}
+
+/*СОЦИАЛЬНЫЕ  ССЫЛКИ*/
+ 
