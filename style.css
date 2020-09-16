@@ -123,6 +123,25 @@ p {
   color: #000;
 }
 
+/*ДОЛГО  ДОРОГО  СКУРПУЛЕЗНО*/
+.description-container {
+position: relative;
+background-color: #eee;
+}
+
+.description-list {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+.description-item {
+  padding: 78px 0px 80px 0px;
+  background: url("img/phones.png") no-repeat 93% 18px;
+}
+
 /*СЕТКА  СПИСКА  ПРЕДЛОЖЕНИЙ*/
 
  .offers {
@@ -310,8 +329,6 @@ p {
   font-weight: 400;
   line-height: 24px;
   color: #283136;
-
-  margin-bottom: 22px;
 }
 
 .orders span {
@@ -333,7 +350,7 @@ p {
 .orders li {
   position: relative;
   padding-right: 0;
-  padding-bottom: 10px;
+  padding-bottom: 0;
   padding-left: 32px;
 }
 
@@ -411,17 +428,17 @@ margin-bottom: 27px;
 
 /*КНОПКА  "УЗНАТЬ БОЛЬШЕ"*/
 
-.description .button {
+.description-item .button {
   padding: 19px 55px 18px 53px;
   background-color: #fb565a;
 }
 
-.description .button:hover,
-.description .button:focus {
+.description-item .button:hover,
+.description-item .button:focus {
    background-color: #e74246;
 }
 
-.description .button:active {
+.description-item .button:active {
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
@@ -477,19 +494,25 @@ margin-bottom: 27px;
   background-color: #e5a722;
 }
 
+/*МОДАЛЬНОЕ  ОКНО  НАПИШИТЕ НАМ*/
+
+.map-container {
+
+}
+
 /*КНОПКА  "НАПИШИТЕ  НАМ"*/
 
-.contacts .button {
+.map-container .button {
   padding: 19px 39px 18px 39px;
   background-color: #fb565a;
 }
 
-.contacts .button:hover,
-.contacts .button:focus {
+.map-container .button:hover,
+.map-container .button:focus {
   background-color: #e74246;
 }
 
-.contacts .button:active {
+.map-container .button:active {
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
@@ -590,5 +613,36 @@ margin-bottom: 27px;
   opacity: 0.1;
 }
 
-/*СОЦИАЛЬНЫЕ  ССЫЛКИ*/
+/*КАРТА*/
+
+.main-map {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 416px;
+}
  
+.main-map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0 auto;
+  width: 100%;
+  height: 416px;
+}
+
+ .map-container {
+  position: absolute;
+  top: 52px;
+  left: 80px;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 320px;
+  height: 310px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #fff;
+ }
+
+ .
